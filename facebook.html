@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>facebook</title>
+    <script src="https://kit.fontawesome.com/cbe409865d.js"></script>
 </head>
 
 <style>
+
     * {
         margin: 0px;
         padding: 0px;
@@ -21,7 +23,7 @@
         width: 1200px;
         height: 900px;
         border: 1px solid black;
-        margin: auto
+        margin: auto;
     }
 
     .nav {
@@ -44,15 +46,16 @@
         margin-right: 15px;
         margin-top: 5px;
     }
-    .nav ul a{
-        color:black;
-        
+
+    .nav ul a {
+        color: black;
+
     }
 
     .nav li {
         display: inline-block;
         width: 85px;
-        color:white;
+        color: white;
         text-align: center;
         line-height: 30px;
         height: 30px;
@@ -64,9 +67,9 @@
         height: 800px;
         width: 90%;
         border: 1px solid red;
-          display: flex;
-         flex-direction: column;
-        
+        display: flex;
+        flex-direction: column;
+
     }
 
     .stories {
@@ -75,6 +78,7 @@
         width: 200px;
         height: 350px;
         border: 1px solid blue;
+        
     }
 
     .wall {
@@ -92,24 +96,40 @@
         height: 350px;
         border: 1px solid orangered;
     }
+
+    /*
+    styling facebook icons
+    */
+
+
+    .fa-facebook-square {
+        font-size: 30px;
+        color: white;
+    }
+
+    .fa-user-friends,
+    .fa-facebook-messenger {
+        font-size: 25px;
+        color: darkgray;
+    }
 </style>
 
 <body>
     <div class="wrap">
         <div class="nav">
-          <nav>
-              <ul>
-           <a href="#"> <li><img>icon-f</img></li></a>
-           <a href="#"> <input type="text" placeholder="Search.."></a>
-                 <a href="#"> <li>ליאורה</li></a>
-                    <a href="#"> <li>דף הבית</li></a>
-                      <a href="#"> <li>מצאי-חברים</li></a>
-                         <a href="#"><li>צרי</li></a>
-                           <a href="#"> <li>icon-p</li></a>
-                            <a href="#"> <li>messeger</li></a>
-                             <a href="#"><li>paamon</li></a>
-                               <a href="#"> <li>?</li></a>
-                                 <a href="#"> <li>icon-m</li></a>
+            <nav>
+                <ul>
+                    <li><a href=""> <i class="fab fa-facebook-square"></i></li>
+                    <li><a href="#"> <input type="text" placeholder="Search.."></a></li>
+                    <li><i class=""></i> אמר ליאורה</li>
+                    <li><i class=""></i>דף הבית</li>
+                    <li><i class=""></i>מצאי-חברים</li>
+                    <li><i class=""></i>צרי</li>
+                    <li><a href=""><i class="fas fa-user-friends"></i></li>
+                    <li><i class="fab fa-facebook-messenger"></i></li>
+                    <li><i class=""></i>paamon</li>
+                    <li><i class=""></i>?</li>
+                    <li><i class=""></i>icon-m</li>
                 </ul>
             </nav>
         </div>
@@ -130,6 +150,7 @@
         </div>
 
     </div>
+
 </body>
 
 </html>
