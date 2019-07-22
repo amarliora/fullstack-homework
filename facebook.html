@@ -9,11 +9,16 @@
 </head>
 
 <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .wrap {
         display: grid;
         grid-template-columns: 1fr 1fr 3fr 1fr;
         grid-template-rows: repeat(10, 1fr);
-        width: 990px;
+        width: 1200px;
         height: 900px;
         border: 1px solid black;
         margin: auto
@@ -22,50 +27,91 @@
     .nav {
         grid-column: 1/6;
         grid-row: 1;
-        height: 75px;
+        height: 45px;
         width: 100%;
-        border: 1px solid black;
+        background-color: #425782;
+        display: flex;
+        justify-content: center;
     }
 
-    .pages{
-            grid-column: 1;
-            grid-row: 2/3;
-            height: 800px;
-            width: 150px;
-            border: 1px solid red;
+    .nav input [type=text] {
+        padding: 6px;
     }
 
-    .stories{
-            grid-column: 2;
-            grid-row: 2/5;
-            width: 150px;
-            height: 350px;
-            border: 1px solid blue;
+    .nav ul {
+        list-style-type: none;
+        padding: 0px;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+    .nav ul a{
+        color:black;
+        
     }
 
-    .wall{
-            grid-column: 3;
-            grid-row: 2/10;
-            width: 350;
-            height: 800px;
-            border: 1px solid green;
+    .nav li {
+        display: inline-block;
+        width: 85px;
+        color:white;
+        text-align: center;
+        line-height: 30px;
+        height: 30px;
     }
 
-    .comunication{
-            grid-column: 4;
-            grid-row: 2/5;
-            width: 150px;
-            height: 350px;
-            border: 1px solid orangered;
+    .pages {
+        grid-column: 1;
+        grid-row: 2/3;
+        height: 800px;
+        width: 90%;
+        border: 1px solid red;
+          display: flex;
+         flex-direction: column;
+        
     }
 
+    .stories {
+        grid-column: 2;
+        grid-row: 2/5;
+        width: 200px;
+        height: 350px;
+        border: 1px solid blue;
+    }
 
+    .wall {
+        grid-column: 3;
+        grid-row: 2/10;
+        width: 95%;
+        height: 800px;
+        border: 1px solid green;
+    }
+
+    .comunication {
+        grid-column: 4;
+        grid-row: 2/5;
+        width: 150px;
+        height: 350px;
+        border: 1px solid orangered;
+    }
 </style>
 
 <body>
     <div class="wrap">
         <div class="nav">
-
+          <nav>
+              <ul>
+           <a href="#"> <li><img>icon-f</img></li></a>
+           <a href="#"> <input type="text" placeholder="Search.."></a>
+                 <a href="#"> <li>ליאורה</li></a>
+                    <a href="#"> <li>דף הבית</li></a>
+                      <a href="#"> <li>מצאי-חברים</li></a>
+                         <a href="#"><li>צרי</li></a>
+                           <a href="#"> <li>icon-p</li></a>
+                            <a href="#"> <li>messeger</li></a>
+                             <a href="#"><li>paamon</li></a>
+                               <a href="#"> <li>?</li></a>
+                                 <a href="#"> <li>icon-m</li></a>
+                </ul>
+            </nav>
         </div>
 
         <div class="pages">
